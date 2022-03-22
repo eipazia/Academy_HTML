@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>La mia prima pagina web</title>
+</head>
+<body bgcolor="PINK">
+    <!--bgcolor="PINK" scrivo in rosa-->
+    <p style="text-align:center">La mia prima pagina HTML</p> <!--titolo del paragrafo-->
+    <!--style="text-align:center" attributo paragrafo p per mettere scritta al centro-->
+    <p style="color:green">
+        Ciao      prova con tanti spazi  &nbsp;&nbsp; <!--corrisponde ad uno spazio--> infatti ora mette due spazi perche ne ho messo due
+        <br> ciao <!--con questo comando va a capo-->
+        <b>Testo in grassetto</b>
+        <br>
+        <u>Testo sottolineato</u>
+        <br>
+        <i>Testo Corsivo</i>
+        <br>
+        <b><i>Testo grassetto <span style="font-size:50px">Ciao</span>corsivo</i></b> <!--Cambia il font solo di ciao-->
+    </p>
+    <!--Per rendere una scritta editabile-->
+    <p contenteditable="true">
+        Prova tu a cambiare questo testo
+    </p>
+    <button type="button">Pulsante</button>
+    <button type="button" onclick="getElementById('pippo').setAttribute('hidden', '');">Nascondi paragrafo</button>
+    <p id="pippo">
+        Nuovo Paragrafo
+    </p>
+    <h1>Titolo</h1>
+    <h2>Titolo</h2>
+    <h3>Titolo</h3>
+    <h4>Titolo</h4>
+    <h5>Titolo</h5>
+    <h3>Aggiungiamo immagine</h3>
+    <img src="Angurie.jpg" />
+    <br />
+    <img src="Angurie.jpg"
+         width="100"
+         height="100"
+         alt="Immagine delle angurie"
+         title="Ecco angurie" />
+    <br />
+
+    <img src="Immagini/pesche.jpg" />
+    <!--<img src="../Immagini/pesche.jpg" />-->
+    <!--Se cerco un immagine a un livello superiore di cartelle
+    ma sempre all'interno del mio progetto'-->
+    <!--immagine dal web-->
+    <br />
+    <img src="data:image/jpeg;base64,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" />
+    <!--Immagini cliccabili-->
+    <br />
+    <img style="text-align:center" src="Angurie.jpg" width="300" height="300" usemap="#miaMappa" />
+    <map name="miaMappa" />
+    <area shape="rect" coords="0,0,50,50" href="Provapagina.html" />
+    <!--href e un collegamento-->
+    <area shape="circle" coords="150,150,50" href="Provapagina.html" />
+    </map>
+
+    <br />
+    <img style="text-align:center" src="images.jpg" />
+
+    <br />
+
+
+
+
+    <a href="Paginehtml/Gatti.html" target="_blank">Clicca qui per andare alla pagina dei gatti</a>
+    <a href="#ultimoparagrafo">Clicca qui per andare all'ultimo paragrafo'</a>
+    <br />
+    <!--inviare una mail-->
+    <a href="mailto:tizio@gmail.com">Clicca per inviare una mail a tizio</a>
+
+
+
+    <!--elenco puntato-->
+    <h2>Elenco puntato</h2>
+    <ul>
+        <li>Primo</li>
+        <li>Secondo</li>
+    </ul>
+    <ol>
+        <li>Primo</li>
+        <li>Secondo</li>
+    </ol>
+    <h2>Tabella</h2>
+    <table border="1">
+        <thead>
+            <!--intestazione-->
+            <tr>
+                <!--riga-->
+                <th><!--colonna-->prima colonna</th>
+                <th>seconda colonna</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Riga1 Colonna 1</th>
+                <th>Riga1 Colonna 2</th>
+            </tr>
+            <tr>
+                <th>Riga2 Colonna 1</th>
+                <th>Riga2 Colonna 2</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    footer della tabella
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+
+    <a name="ultimoparagrafo"></a>
+    <p>ultimoparagrafo</p>
+
+    <!--inserisci video-->
+    <!--<video width="320" height="240" controls="controls">
+        <source src="" type="audio/mp4" />
+    </video>-->
+    <iframe width="704" height="396" src="https://www.youtube.com/embed/GXPTrsUqn0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<p>Registrati! Inserisci <a href="Registrazione.html">qui</a> i tuoi dati</p>
+
+</body>
+</html>
